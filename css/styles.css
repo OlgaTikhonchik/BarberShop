@@ -8,6 +8,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--white-color);
   font-family: Open Sans, sans-serif;
   background-color: rgb(210, 115, 174);
