@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --secondary-color: #9da4bd;
   --hero-text: rgba(157, 164, 189, 0.6);
+  --bg-color: #f7f7f7;
 }
 
 body {
@@ -16,15 +17,71 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 /* Header */
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header {
+  margin-left: 100px;
+}
+
+.header-btn {
+  margin-left: auto;
+}
+.nav-list {
+  display: flex;
+}
+
+.nav-list .item + .item {
+  margin-left: 30px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   color: var(--text-color);
   font-size: 14px;
   font-weight: 400;
@@ -32,11 +89,22 @@ body {
   letter-spacing: 0.28px;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
 .nav-link.current {
   color: var(--accent-color);
 }
+.nav-link.current:hover {
+  color: var(--text-color);
+}
 
 .nav-tel {
+  margin-right: 43px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   color: var(--white-color);
   font-size: 12px;
 
@@ -46,7 +114,16 @@ body {
   text-transform: uppercase;
 }
 
+.nav-tel:hover,
+.nav-tel:focus {
+  color: var(--title-color);
+}
 .button {
+  min-width: 160px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
   color: var(--white-color);
   font-family: Open Sans;
   font-size: 12px;
@@ -57,7 +134,37 @@ body {
   background-color: #303030;
 }
 
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+}
+.button.secondary {
+  color: var(--title-color);
+  background-color: var(--white-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button.centred {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* Hero */
+
+.hero-container {
+  display: flex;
+}
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  align-items: center;
+  gap: 40px;
+}
 
 .hero-link {
   color: var(--title-color);
@@ -66,11 +173,22 @@ body {
   line-height: 1.2;
 }
 
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
 .hero-link.current {
   color: var(--accent-color);
 }
 
+.hero-link.current:hover,
+.hero-link.current:focus {
+  color: var(--title-color);
+}
+
 .hero-text {
+  margin-bottom: 20px;
+
   color: var(--hero-text);
   font-size: 11px;
   font-weight: 600;
@@ -86,7 +204,14 @@ body {
   letter-spacing: 0.36px;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .hero-title {
+  margin-bottom: 20px;
+
   text-align: center;
   color: var(--white-color);
   font-family: Raleway, sans-serif;
@@ -98,7 +223,30 @@ body {
 
 /* About */
 
+.about-wrap {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list .item + .item {
+  margin-left: 30px;
+}
+
+.about-content {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 30px;
+}
+
 .span-text {
+  display: block;
+  margin-bottom: 20px;
   color: var(--title-color);
   font-size: 11px;
   font-weight: 600;
@@ -107,6 +255,7 @@ body {
 }
 
 .title {
+  margin-bottom: 20px;
   color: var(--title-color);
   font-family: Raleway, sans-serif;
   font-size: 42px;
@@ -116,6 +265,7 @@ body {
 }
 
 .text {
+  margin-bottom: 20px;
   color: var(--text-color);
   font-size: 18px;
   font-weight: 400;
@@ -124,6 +274,7 @@ body {
 }
 
 .description {
+  margin-bottom: 54px;
   color: var(--text-color);
   font-size: 14px;
   font-weight: 400;
@@ -132,6 +283,27 @@ body {
 }
 
 /* Services and prices  */
+
+.price-description {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.price-description .price-list + .price-list {
+  margin-left: 30px;
+}
+
+.price-list {
+  margin: 0;
+  padding: 0;
+}
+.price-list .item {
+  display: flex;
+}
+
+.price-list .item + .item {
+  margin-top: 20px;
+}
 
 .item-text {
   color: var(--secondary-color);
@@ -142,6 +314,41 @@ body {
 }
 
 /* Почему мы  */
+.wrapper {
+  display: flex;
+}
+.wrapper-list {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+
+  margin: 20px 0 0 0;
+}
+
+.wrapper-list .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 24px;
+  width: 170px;
+  height: 133px;
+  background-color: var(--bg-color);
+}
+
+.wrapper-list .item:nth-child(2n) {
+  margin-left: 30px;
+}
+
+.wrapper-list .item:nth-child(2n + 1) {
+  margin-bottom: 30px;
+}
+
+.wrapper-desc {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  margin-left: 130px;
+}
 .number {
   color: var(--title-color);
   text-align: center;
@@ -164,7 +371,23 @@ body {
   letter-spacing: 0.36px;
 }
 /* Our barbers */
+.title-barbers {
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+}
+.photo-barbers {
+  margin-bottom: 30px;
+}
+
+.barbers-list .item + .item {
+  margin-left: 30px;
+}
+
 .title-name {
+  margin-bottom: 8px;
   color: var(--title-color);
   text-align: center;
   font-family: Open Sans;
@@ -175,6 +398,7 @@ body {
 }
 
 .description-barber {
+  margin-bottom: 30px;
   color: var(--accent-color);
   text-align: center;
   font-size: 14px;
@@ -182,11 +406,32 @@ body {
   line-height: 1.2;
   letter-spacing: 0.28px;
 }
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-list .item + .item {
+  margin-left: 10px;
+}
+
 /* Portfolio */
 
+.portfolio-list {
+  display: flex;
+}
+
+.span-text.portfolio {
+  margin-bottom: 44px;
+}
+.portfolio-list .item + .item {
+  margin-left: 30px;
+}
 /* Online-booking */
 .title-online,
 .title-contacts {
+  margin-bottom: 40px;
   color: var(--white-color);
   font-family: Raleway, sans-serif;
   font-size: 42px;
@@ -206,6 +451,7 @@ body {
 
 /* Contacts */
 .address {
+  margin-bottom: 20px;
   color: var(--secondary-color);
   font-size: 18px;
   font-weight: 700;
@@ -214,6 +460,7 @@ body {
 }
 
 .address-tel {
+  margin-bottom: 20px;
   color: var(--secondary-color);
   font-size: 18px;
   font-weight: 400;
@@ -222,6 +469,7 @@ body {
 }
 
 .address-email {
+  margin-bottom: 70px;
   color: var(--secondary-color);
   font-size: 18px;
   font-weight: 400;
@@ -238,8 +486,28 @@ body {
   letter-spacing: 0.36px;
 }
 
-/* Footer */
+.wrap-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+}
 
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.footer-list {
+  display: flex;
+}
+
+.footer-list .item + .item {
+  margin-left: 40px;
+}
 .copyright {
   color: var(--secondary-color);
   font-size: 11px;
