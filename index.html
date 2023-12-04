@@ -21,7 +21,12 @@
     <!-- Шапка -->
     <div class="header">
       <header class="container header-container">
-        <a href=""><img src="./images/Logo.svg" alt="Logo" /></a>
+        <!-- <a href=""><img src="./images/Logo.svg" alt="Logo" /></a> -->
+        <a href="">
+          <svg class="button-icon" width="70" height="55">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
         <nav class="nav-header">
           <ul class="nav-list list">
             <li class="item">
@@ -122,7 +127,7 @@
         </div>
       </section>
       <!-- Services and prices -->
-      <section class="section">
+      <section class="section price-section">
         <div class="container">
           <p class="span-text">Spend your time with the best masters</p>
           <h2 class="title" id="services">Services and prices</h2>
@@ -202,7 +207,7 @@
       </section>
 
       <!-- Наши мастера -->
-      <section class="section">
+      <section class="section section-barbers">
         <div class="container">
           <p class="span-text">For true enjoyers of the atmosphere</p>
           <h2 class="title title-barbers" id="barbers">Our barbers</h2>
@@ -217,16 +222,32 @@
               <p class="description-barber">Extreme Barber</p>
               <ul class="soc-list list">
                 <li class="item">
-                  <a class="link" href="" aria-label="Instagram">Instagram</a>
+                  <a class="link-icon" href="" aria-label="Instagram"> 
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="Twitter">Twitter</a>
+                  <a class="link-icon" href="" aria-label="Twitter">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="Facebook">Facebook</a>
+                  <a class="link-icon" href="" aria-label="Facebook">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="LinkedIn">LinkedIn</a>
+                  <a class="link-icon" href="" aria-label="LinkedIn">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -240,16 +261,24 @@
               <p class="description-barber">Extreme Barber</p>
               <ul class="soc-list list">
                 <li class="item">
-                  <a class="link" href="" aria-label="Instagram">Instagram</a>
+                  <a class="link-icon" href="" aria-label="Instagram"> <svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg></a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="Twitter">Twitter</a>
+                  <a class="link-icon" href="" aria-label="Twitter"><svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg></a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="Facebook">Facebook</a>
+                  <a class="link-icon" href="" aria-label="Facebook"> <svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg></a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="LinkedIn">LinkedIn</a>
+                  <a class="link-icon" href="" aria-label="LinkedIn"><svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg></a>
                 </li>
               </ul>
             </li>
@@ -263,16 +292,24 @@
               <p class="description-barber">Extreme Barber</p>
               <ul class="soc-list list">
                 <li class="item">
-                  <a class="link" href="" aria-label="Instagram">Instagram</a>
+                  <a class="link link-icon" href="" aria-label="Instagram"> <svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg></a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="Twitter">Twitter</a>
+                  <a class="link-icon" href="" aria-label="Twitter"><svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg></a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="Facebook">Facebook</a>
+                  <a class="link-icon" href="" aria-label="Facebook"> <svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg></a>
                 </li>
                 <li class="item">
-                  <a class="link" href="" aria-label="LinkedIn">LinkedIn</a>
+                  <a class="link-icon" href="" aria-label="LinkedIn"><svg class="icon-btn" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg></a>
                 </li>
               </ul>
             </li>
@@ -302,54 +339,85 @@
         </div>
       </section>
       <!--Online-booking  -->
-      <section class="section">
+      <div class="wrap-section">
         <div class="container">
-          <h2 class="title-online" id="contacts">Online-booking</h2>
-          <form class="form">
-            <input
-              type="text"
-              name="online-name"
-              id="online-name"
-              placeholder=" "
-            />
-            <label class="label" for="online-name">Name*</label>
-            <input
-              type="text"
-              name="online-phone"
-              id="online-phone"
-              placeholder=" "
-            />
-            <label class="label" for="online-phone">Phone*</label>
-            <textarea
-              name="online-message"
-              id="online-message"
-              placeholder=" "
-            ></textarea>
-            <label class="label" for="online-message">Message</label>
-            <button class="button" type="submit">send</button>
-          </form>
+          <section class="section online-section">
+            <!-- <div class="container"> -->
+              <h2 class="title-online" id="contacts">Online-booking</h2>
+              <form class="form">
+               <div class="wrap-input">
+                <div class="wrap-online">
+                  <input
+                  class="input"
+                  type="text"
+                  name="online-name"
+                  id="online-name"
+                  placeholder=" "
+                />
+                <label class="label" for="online-name">Name*</label>
+                </div>
+                <div  class="wrap-online">
+                  <input
+                  class="input"
+                  type="text"
+                  name="online-phone"
+                  id="online-phone"
+                  placeholder=" "
+                />
+                <label class="label" for="online-phone">Phone*</label>
+                </div>
+               </div>
+                <div class="wrap-textarea">
+                  <textarea
+                  class="textarea"
+                  name="online-message"
+                  id="online-message"
+                  placeholder=" "
+                ></textarea>
+                <label class=" label textarea-label" for="online-message">Message</label>
+                </div>
+                <button class="button" type="submit">send</button>
+              </form>
+            <!-- </div> -->
+          </section>
+          <!--Contacts  -->
+          <section class="section contacts-section">
+            <!-- <div class="container"> -->
+              <h2 class="title-contacts" id="contacts">Contacts</h2>
+             <div class="wrap-address">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-map"></use>
+              </svg>
+              <address class="address">
+                st. Vasilkivska, 7A <br />
+                Kyiv, 08132
+              </address>
+             </div>
+             
+              <address class="wrap-contacts">
+                <div class="wrap-address">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <a class="address-tel" href="tel:+380441111111"
+                    >+38 044 111 11 11</a
+                  >
+                </div>
+                <div class="wrap-address">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a class="address-email" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </div>
+              </address>
+              <span class="span-text">Working hours</span>
+              <p class="contacts-text">Every day from 9:00 to 22:00</p>
+            <!-- </div> -->
+          </section>
         </div>
-      </section>
-      <!--Contacts  -->
-      <section class="section">
-        <div class="container">
-          <h2 class="title-contacts" id="contacts">Contacts</h2>
-          <address class="address">
-            st. Vasilkivska, 7A <br />
-            Kyiv, 08132
-          </address>
-          <address class="wrap-contacts">
-            <a class="address-tel" href="tel:+380441111111"
-              >+38 044 111 11 11</a
-            >
-            <a class="address-email" href="mailto:barbershop@email.com"
-              >barbershop@email.com</a
-            >
-          </address>
-          <span class="span-text">Working hours</span>
-          <p class="contacts-text">Every day from 9:00 to 22:00</p>
-        </div>
-      </section>
+      </div>
     </main>
     <!-- Footer -->
     <footer>
