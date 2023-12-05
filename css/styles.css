@@ -705,6 +705,9 @@ img {
   letter-spacing: 0.36px;
 }
 
+.span-contacts{
+  color: var(--white-color);
+}
 .wrap-contacts {
   display: flex;
   flex-direction: column;
