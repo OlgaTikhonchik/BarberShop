@@ -50,7 +50,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 
@@ -68,6 +68,8 @@ img {
 }
 
 .header {
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: rgb(113, 116, 109);
@@ -255,6 +257,7 @@ img {
 }
 
 .hero-content {
+  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -354,11 +357,15 @@ img {
 
 /* Services and prices  */
 .price-section {
+  max-width: 1600px;
+  margin: 0 auto;
+
   background-color: var(--bg-price);
-  background-image: url(../images/priceDesc.jpg);
+  background-image: url(../images/priceDesc.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  
   
 }
 
@@ -499,6 +506,8 @@ img {
 }
 
 .section-barbers{
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--bg-color);
 }
 .photo-barbers {
@@ -702,13 +711,14 @@ img {
 }
 
 .wrap-section{
-  background-color: var(--bg-contacts);
-  background-image: url(../images/bgContactDesk.jpg);
- 
-  background-position: right;
-  background-repeat: no-repeat;
   max-width: 1600px;
   margin: 0 auto;
+
+  background-color: var(--bg-contacts);
+  background-image: url(../images/bgContactDesc.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  
 
 
 }
