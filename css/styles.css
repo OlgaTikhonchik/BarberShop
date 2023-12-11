@@ -752,6 +752,7 @@ img {
   background-image: url(../images/bgContactDesc.png);
   background-position: right;
   background-repeat: no-repeat;
+  background-size: calc(50% - 31px) 100%;
   
 
 
@@ -943,6 +944,7 @@ resize: none;
   transition: color 250ms var(--timing-function);
 }
 
-.modal-button:hover{
+.modal-button:hover
+{
   color:var(--white-color);
 }
