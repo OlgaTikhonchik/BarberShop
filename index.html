@@ -46,7 +46,7 @@
         <div class="header-btn">
           <a class="nav-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
 
-          <button class="button" type="button">Online-booking</button>
+          <button class="button" type="button" data-modal-open>Online-booking</button>
         </div>
       </header>
     </div>
@@ -119,7 +119,7 @@
                 always "on the same wave" with clients. Therefore, we are always
                 ready to improve everyone who comes to us!
               </p>
-              <button class="button secondary" type="button">
+              <button class="button secondary" type="button" data-modal-open>
                 Online-booking
               </button>
             </div>
@@ -170,7 +170,7 @@
               </li>
             </ul>
           </div>
-          <button class="button centred" type="button">Online-booking</button>
+          <button class="button centred" type="button" data-modal-open>Online-booking</button>
         </div>
       </section>
       <!--Почему мы  -->
@@ -449,5 +449,38 @@
         </div>
       </div>
     </footer>
+  <!-- Modal -->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="button-close" data-modal-close>
+        <svg class="icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <form class="form-modal">
+        <div class="wrap-input">
+          <label class="modal-label" for="name-modal">Name*</label>
+            <input class="modal-input" type="text" name="" id="name-modal" required>
+            <label class="modal-label" for="phone-modal">Phone*</label>
+            <input class="modal-input" type="tel" name="" id="phone-modal" required>
+            <label class="modal-label" for="email-modal">Email*</label>
+            <input class="modal-input" type="email" name="" id="email-modal" required>
+        </div>
+        <div class="wrap-textarea">
+          <label class="modal-label" for="message-modal">Message*</label>
+          <textarea class="modal-textarea" name="" id="message-modal" ></textarea>
+        </div>
+        <div class="button  modal-button" type="submit">Send</div>
+      </form>
+
+    </div>
+  </div> 
+
+
+
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
